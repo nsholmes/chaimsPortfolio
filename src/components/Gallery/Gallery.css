@@ -1,0 +1,14 @@
+.galleryWrapperCss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.galleryImageCss {
+    width: 300px;
+    height: 240px;
+    background-size: cover;
+    margin: 20px;
+}
+.galleryImageCss:hover {
+    cursor: pointer;
+}

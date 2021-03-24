@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+.hamburger-react {
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  margin: 15px;
+  color: #ffffff;
+}
+
+.App-header {
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  /* background-color: #282c34; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+  /* box-shadow: 0px 1px 2px #141619; */
+}
+
+.siteNameCss {
+  margin: auto 0px;
+  padding-left: 5px;
+}
+
+.CarouselWrapperCss {
+  width: 800px;
+}

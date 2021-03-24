@@ -1,0 +1,62 @@
+.welcomeNameCss {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #9c7fba;
+    text-align: right;
+    z-index: 10;
+}
+
+.whiteTextCss {
+    color: #fff;
+}
+.purpleTextCss {
+    text-shadow: 3px 3px 5px #000;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .siteNameCss {
+        font-size: 1.2em;
+    }
+    .scrollInstCss {
+        font-size: 0.7em;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .siteNameCss {
+        font-size: 1.5em;
+    }
+    .scrollInstCss {
+        font-size: 0.8em;
+    }
+}
+/* small screens and Laptops */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .siteNameCss {
+        font-size: 2.9em;
+    }
+    .scrollInstCss {
+        font-size: 1.4em;
+    }
+}
+/* Desktops & Large Screens */
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+    .siteNameCss {
+        font-size: 3.5em;
+    }
+    .scrollInstCss {
+        font-size: 1.4em;
+    }
+}
+/* Extra large Screens and TVs */
+@media screen and (min-width: 1201px) {
+    .siteNameCss {
+        font-size: 4em;
+    }
+    .scrollInstCss {
+        font-size: 1.7em;
+    }
+}
