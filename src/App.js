@@ -7,7 +7,7 @@ import { Home, Journalism, PhotoEssay, Portraits, Travel, Videos } from './views
 
 function App() {
   const [isOpen, setOpen] = useState(false);
-    
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -22,6 +22,8 @@ function App() {
           <Route path='/journalism' component={Journalism}></Route>
           <Route path='/photoessay' component={PhotoEssay}></Route>
           <Route path='/videos' component={Videos}></Route>
+          <Route path='/stills'></Route>
+          <Route path='/motion'></Route>
         </switch>
       </BrowserRouter>
 

@@ -6,4 +6,5 @@ export { default as PortraitPics } from './images/portraitPics';
 export { default as PortraitThumbnails } from './images/portraitThumbnails';
 export { default as TravelPics } from './images/travelPics';
 export { default as TravelThumbnails } from './images/travelThumbnails';
+export * from './DataService/imageService'
 

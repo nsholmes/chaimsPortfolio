@@ -14,7 +14,7 @@ function Slides() {
         {
           LandscapePics.map((pic) => (
             <div className="each-slide">
-              <div style={{ 'backgroundImage': `url(${pic})` }} />
+              <div style={{ 'backgroundImage': `url(https://nazeerholmes.com/images/Climbing1410_comp.jpg)` }} />
             </div>
           ))
         }
