@@ -7,18 +7,18 @@ function PhotoEssay() {
             <div className='essayWrapper'>
                 <div className='essaySection'>
                     <div className='imgContainerCss'>
-                        <img src={PhotoEssayPics[0]} />
+                        <img alt="" src={PhotoEssayPics[0]} />
                         <p>
                             Covid-19 has generated problems for everyone. Although people’s circumstances vary widely, it
                             all comes down to the same two troubles: food and isolation.
-                    </p>
+                        </p>
                     </div>
 
                     <p>Chaim Duffe-Holmes</p>
                 </div>
                 <div className='essaySection'>
                     <div className='imgContainerCss'>
-                        <img src={PhotoEssayPics[1]} />
+                        <img alt="" src={PhotoEssayPics[1]} />
                     </div>
                     <p>
                         This is a good friend of mine, Zach, eating lunch alone. Before coronavirus, I would sit with him
@@ -34,10 +34,10 @@ function PhotoEssay() {
                 <div className='essaySection'>
                     <div style={{ display: 'flex', textAlign: 'center' }}>
                         <div className='imgContainerCss'>
-                            <img src={JournalismPics[0][2]} style={{ width: '75%' }} />
+                            <img alt="" src={JournalismPics[0][2]} style={{ width: '75%' }} />
                         </div>
                         <div className='imgContainerCss'>
-                            <img src={JournalismPics[0][0]} style={{ width: '75%' }} />
+                            <img alt="" src={JournalismPics[0][0]} style={{ width: '75%' }} />
                         </div>
                     </div>
                     <p>
@@ -55,11 +55,11 @@ function PhotoEssay() {
                 <div className='essaySection'>
                     <div style={{ display: 'flex', textAlign: 'center' }} className='imgContainerCss'>
                         <div>
-                            <img style={{ width: '62%' }} src={JournalismPics[0][3]} />
+                            <img alt="" style={{ width: '62%' }} src={JournalismPics[0][3]} />
                         </div>
                         <div>
                             <div>
-                                <img style={{ width: '85%' }} src={JournalismPics[0][1]} />
+                                <img alt="" style={{ width: '85%' }} src={JournalismPics[0][1]} />
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ function PhotoEssay() {
                 </div>
                 <div className='essaySection'>
                     <div className='imgContainerCss'>
-                        <img src={JournalismPics[2][0]} />
+                        <img alt="" src={JournalismPics[2][0]} />
                     </div>
                     <p>
                         For the first time ever, my high school had a live stream of a sporting event, and not because
@@ -88,19 +88,19 @@ function PhotoEssay() {
                 </div>
                 <div className='essaySection'>
                     <div className='imgContainerCss' style={{ textAlign: 'center' }}>
-                        <img src={JournalismPics[1][2]} style={{ width: '60%' }} />
+                        <img alt="" src={JournalismPics[1][2]} style={{ width: '60%' }} />
                     </div>
                     <div>High School wrestlers aren’t the only wrestlers in St. Louis who have been affected by the
-                    pandemic. UFC champion Tyron Woodley, had to make the best of the unfortunate situation.
-                    He’s done this by picking up cooking, as I’m sure many others have done also. Woodley, as well
-                    as his family, were always busy before the pandemic; whether that was because of sports,
-                    school, or work, they weren’t home very much. Now that they need to isolate to the best of their
-                    ability for Tyron’s career, they can finally enjoy home-cooked meals regularly and the
+                        pandemic. UFC champion Tyron Woodley, had to make the best of the unfortunate situation.
+                        He’s done this by picking up cooking, as I’m sure many others have done also. Woodley, as well
+                        as his family, were always busy before the pandemic; whether that was because of sports,
+                        school, or work, they weren’t home very much. Now that they need to isolate to the best of their
+                        ability for Tyron’s career, they can finally enjoy home-cooked meals regularly and the
                         circumstance has given Tyron a chance to really learn how to cook.</div>
                 </div>
                 <div className='essaySection'>
                     <div className='imgContainerCss'>
-                        <img src={JournalismPics[1][1]} />
+                        <img alt="" src={JournalismPics[1][1]} />
                     </div>
                     <div>
                         Woodley told me, “I have to be very serious about this stuff. Other people, if they get sick, they
@@ -113,7 +113,7 @@ function PhotoEssay() {
                 </div>
                 <div className='essaySection'>
                     <div className='imgContainerCss' style={{ textAlign: 'center' }}>
-                        <img src={JournalismPics[1][0]} style={{ width: '60%' }} />
+                        <img alt="" src={JournalismPics[1][0]} style={{ width: '60%' }} />
                     </div>
                     <p>
                         Groceries stores are like the minefields of the coronavirus pandemic, trust me I work at one.
@@ -128,7 +128,7 @@ function PhotoEssay() {
                 </div>
                 <div className='essaySection'>
                     <div className='imgContainerCss' style={{ textAlign: 'center' }}>
-                        <img src={PhotoEssayPics[2]} style={{ width: '60%' }} />
+                        <img alt="" src={PhotoEssayPics[2]} style={{ width: '60%' }} />
                     </div>
                     <p>
                         At the start of the pandemic, emergency shelters were forced to drastically reduce their
@@ -153,12 +153,12 @@ function PhotoEssay() {
                     </p>
                 </div>
                 <div className='essaySection'>
-                    <div className='imgContainerCss' style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                    <div className='imgContainerCss' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                         <div>
-                            <img src={PhotoEssayPics[3]} style={{width:'85%'}} />
+                            <img alt="" src={PhotoEssayPics[3]} style={{ width: '85%' }} />
                         </div>
                         <div>
-                            <img src={PhotoEssayPics[4]} />
+                            <img alt="" src={PhotoEssayPics[4]} />
                         </div>
                     </div>
                     <p>
@@ -183,7 +183,7 @@ function PhotoEssay() {
                         younger than me.
                     </p>
                 </div>
-                <div style={{color:'#9c7fba'}}>
+                <div style={{ color: '#9c7fba' }}>
                     <h4>Artist Statement:</h4>
                     <p>
                         Being an essential worker at Trader Joe’s and a high school student, I have seen firsthand how

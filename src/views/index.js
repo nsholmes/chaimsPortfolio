@@ -4,4 +4,6 @@ export { default as PhotoEssay } from './PhotoEssay';
 export { default as Portraits } from './Portraits';
 export { default as Travel } from './Travel';
 export { default as Videos } from './Videos';
+export { default as Motion } from './Motion';
+export { default as Stills } from './Stills'
 

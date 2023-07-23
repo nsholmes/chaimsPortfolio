@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import { MainNavigation } from './components';
-import { Home, Journalism, PhotoEssay, Portraits, Travel, Videos } from './views';
+import { Home, Journalism, PhotoEssay, Portraits, Travel, Videos, Motion, Stills } from './views';
+import Contact from './views/contact';
 
 function App() {
   const [isOpen, setOpen] = useState(false);
@@ -22,11 +23,11 @@ function App() {
           <Route path='/journalism' component={Journalism}></Route>
           <Route path='/photoessay' component={PhotoEssay}></Route>
           <Route path='/videos' component={Videos}></Route>
-          <Route path='/stills'></Route>
-          <Route path='/motion'></Route>
+          <Route path='/stills' component={() => <Stills />}></Route>
+          <Route path='/motion' component={() => <Motion />}></Route>
+          <Route path='/contact' component={() => <Contact />}></Route>
         </switch>
       </BrowserRouter>
-
     </div>
   );
 }

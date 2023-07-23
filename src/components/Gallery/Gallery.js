@@ -2,16 +2,15 @@ import './Gallery.css';
 
 function Gallery(props) {
     const { isNested, pictures, imgClicked } = props;
-    let picCount = 0;
+    console.log(pictures)
     if (isNested) {
         return (
             <div className='galleryWrapperCss'>
                 {
                     pictures.map(directory => {
                         return directory.map(pic => {
-                            picCount++
                             return <div
-                                onClick={() => {imgClicked(pic.split('/')[3])}}
+                                onClick={() => { imgClicked(pic.split('/')[3]) }}
                                 className="galleryImageCss"
                                 style={{ 'backgroundImage': `url(${pic})` }} />
                         });

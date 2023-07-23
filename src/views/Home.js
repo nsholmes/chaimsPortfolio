@@ -1,14 +1,14 @@
-import { Box, Typography } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import { useEffect } from 'react';
-import { Slides } from '../components';
-import Categories from '../components/Categories/Categories';
-import { getImageJson } from '../utils';
+import Link from '@material-ui/core/Link';
 import './home.css';
 import { picsv2 } from '../utils/images/picV2';
-import { useNavigate } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 function Home() {
-    const navigator = useNavigate();
+    const history = useHistory();
     const { base, mainBkg } = picsv2;
     useEffect(() => {
 
@@ -30,20 +30,22 @@ function Home() {
                 <Box sx={{
                     display: 'flex',
                     justifyContent: 'space-around',
-                    marginBottom: '60px'
+                    marginBottom: '60px',
+                    gap: '30px',
+                    flexWrap: 'wrap'
                 }}>
                     <iframe
                         width="650"
                         height="405"
                         src="https://www.youtube.com/embed/C5EcF7ZsFWs"
-                        title="YouTube video player" frameborder="10"
+                        title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                     <iframe
                         width="650"
                         height="405"
                         src="https://www.youtube.com/embed/enF0_djdhSY"
-                        title="YouTube video player" frameborder="10"
+                        title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </Box>
@@ -54,15 +56,14 @@ function Home() {
                     padding: '2vh 2vw',
                     textAlign: 'left',
                     backgroundColor: '#efefef22',
-                    width: '96vw',
                     color: 'antiquewhite'
                 }}>
                     <div className='nameInfoSect'>
                         <Box sx={{ color: '#9c7fba', textAlign: 'left', minWidth: '200px', fontSize: '1.3em' }}>
                             Chaim Nazeer
                         </Box>
-                        <div>Photo Journalist</div>
-                        <div>Rock Climbing Enthusiast</div>
+                        <Box sx={{ fontSize: '0.8em' }}>Photo Journalist</Box>
+                        <Box sx={{ fontSize: '0.8em' }}>Rock Climbing Enthusiast</Box>
                     </div>
                     <div className='infoSect'>
                         My passion is to capture the beauty and emotion of life through the lens
@@ -81,16 +82,24 @@ function Home() {
                     display: 'flex',
                     justifyContent: 'space-evenly',
                     flexDirection: 'row',
-                    width: '100vw',
+                    width: '100%',
                     fontSize: '20px',
                     color: 'antiquewhite',
                     backgroundColor: '#000',
                     height: '100px',
                     alignItems: 'center'
                 }}>
-                    <div onClick={() => navigator('/stills')}>Stills</div>
-                    <div onClick={() => navigator('/motion')}>Motion</div>
-                    <div onClick={() => navigator('/photoessay')}>Photo Essay</div>
+                    <div onClick={() => history.push('/stills')}>Stills</div>
+                    <div onClick={() => history.push('/motion')}>Motion</div>
+                    <div onClick={() => history.push('/photoessay')}>Photo Essay</div>
+                </Box>
+                <Box className="footerSection">
+                    <Link href="https://www.instagram.com/chaimnazeer/">
+                        <InstagramIcon sx={{ fontSize: 'large' }} />
+                    </Link>
+                    <Link href="emailto: cduffeholmes@gmail.com">
+                        <MailOutlineIcon />
+                    </Link>
                 </Box>
             </div>
         </div>

@@ -12,6 +12,16 @@
     color: #efefef;
 }
 
+.footerSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    color: #efefef;
+    background-color: #efefef00;
+}
+
 /* Mobile devices */
 @media screen and (max-width: 480px) and (min-width: 320px) {
     .siteNameCss {
@@ -79,16 +89,14 @@
     background-size: cover;
     position: fixed;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     opacity: 0.4;
   }
 
   .scroll-layer{
     position: absolute;
   }
-  .scroll-layer-section{
-    
-  }
+  
   .scroll-layer-section > div.nameInfoSect{
     text-align: right;
     font-size: 1.2em;

@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useEffect, useState } from 'react';
 import { Slide } from 'react-slideshow-image';
 import './Carousel.css';
+import { Box } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     modal: {
@@ -24,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 function Carousel(props) {
     const { isOpen, pictures, currentIdx, onClosed } = props;
     const classes = useStyles();
-
+    const [isLoaded, setIsLoaded] = useState(false)
 
     const [open, setOpen] = useState(false);
 
@@ -33,22 +34,26 @@ function Carousel(props) {
         if (isOpen && !open) {
             setOpen(true);
         } else {
-            console.log("No Go!") 
+            console.log("No Go!")
         }
 
-    });
+    }, []);
 
-    const handleOpen = () => {
-        setOpen(true);
-    };
+
 
     const handleClose = () => {
+        setIsLoaded(false)
         setOpen(false);
         onClosed();
     };
 
+    const imageLoading = () => {
+        console.log("Loading!!!")
+    }
+
     return (
         <div>
+
             <Modal
                 className={classes.modal}
                 open={open}
@@ -58,19 +63,26 @@ function Carousel(props) {
                     timeout: 500,
                 }}
             >
+
                 <Fade in={open}>
                     <div className={`paperCss ${classes.paper}`}>
+
                         <Slide
                             defaultIndex={currentIdx}
-                            pauseOnHover={false} easing="linear" duration={2500} arrows={true}>
+                            arrows={true}>
+                            {!isLoaded ? <h1><Box sx={{ position: 'relative' }}>Loading...</Box></h1> : <></>}
+
                             {
                                 pictures.map((pic, idx) => {
-                                    return (
-                                        // <div style={{'backgroundPosition': 'center', 'backgroundRepeat': 'no-repeat', 'backgroundSize': 'cover', 'width': '800px', 'height': '800px','backgroundImage': `url(${pic})` }}>
-                                        <img className={classes.picture} src={pic} />
+                                    return (<div className='each-slide-effect'>
+                                        <div>
+                                            <img alt="smallPics" className={classes.picture} src={pic} onLoadedData={() => { imageLoading() }} onLoad={() => { setIsLoaded(true) }} />
+                                        </div>
+                                    </div>
                                     );
                                 })
                             }
+
                         </Slide>
                     </div>
                 </Fade>
