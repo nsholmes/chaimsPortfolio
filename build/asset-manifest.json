@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.29f7e805.chunk.css",
-    "main.js": "/static/js/main.f271d54b.chunk.js",
-    "main.js.map": "/static/js/main.f271d54b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c2f50b5e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c2f50b5e.js.map",
+    "main.css": "/static/css/main.5fe37985.chunk.css",
+    "main.js": "/static/js/main.ec8caa6e.chunk.js",
+    "main.js.map": "/static/js/main.ec8caa6e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.926729ad.js",
+    "runtime-main.js.map": "/static/js/runtime-main.926729ad.js.map",
     "static/css/2.c9ce1f70.chunk.css": "/static/css/2.c9ce1f70.chunk.css",
-    "static/js/2.07c848c2.chunk.js": "/static/js/2.07c848c2.chunk.js",
-    "static/js/2.07c848c2.chunk.js.map": "/static/js/2.07c848c2.chunk.js.map",
-    "static/js/3.32ac43c5.chunk.js": "/static/js/3.32ac43c5.chunk.js",
-    "static/js/3.32ac43c5.chunk.js.map": "/static/js/3.32ac43c5.chunk.js.map",
+    "static/js/2.319763c5.chunk.js": "/static/js/2.319763c5.chunk.js",
+    "static/js/2.319763c5.chunk.js.map": "/static/js/2.319763c5.chunk.js.map",
+    "static/js/3.52beedcd.chunk.js": "/static/js/3.52beedcd.chunk.js",
+    "static/js/3.52beedcd.chunk.js.map": "/static/js/3.52beedcd.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.c9ce1f70.chunk.css.map": "/static/css/2.c9ce1f70.chunk.css.map",
-    "static/css/main.29f7e805.chunk.css.map": "/static/css/main.29f7e805.chunk.css.map",
-    "static/js/2.07c848c2.chunk.js.LICENSE.txt": "/static/js/2.07c848c2.chunk.js.LICENSE.txt",
+    "static/css/main.5fe37985.chunk.css.map": "/static/css/main.5fe37985.chunk.css.map",
+    "static/js/2.319763c5.chunk.js.LICENSE.txt": "/static/js/2.319763c5.chunk.js.LICENSE.txt",
     "static/media/01_etc.6b307ab0.jpg": "/static/media/01_etc.6b307ab0.jpg",
     "static/media/01_etc.8592f066.jpg": "/static/media/01_etc.8592f066.jpg",
     "static/media/01_etc.95c6b7ef.jpg": "/static/media/01_etc.95c6b7ef.jpg",
@@ -192,10 +192,10 @@
     "static/media/TraderJoePE.9f57e28a.png": "/static/media/TraderJoePE.9f57e28a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c2f50b5e.js",
+    "static/js/runtime-main.926729ad.js",
     "static/css/2.c9ce1f70.chunk.css",
-    "static/js/2.07c848c2.chunk.js",
-    "static/css/main.29f7e805.chunk.css",
-    "static/js/main.f271d54b.chunk.js"
+    "static/js/2.319763c5.chunk.js",
+    "static/css/main.5fe37985.chunk.css",
+    "static/js/main.ec8caa6e.chunk.js"
   ]
 }
